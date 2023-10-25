@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.navLogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navImg{
+    padding-bottom:10px;
+}
+
+.navButton{
+    margin:5px;
+}
+
+.divider {
+    border-bottom: 3px solid;
+    border-image: linear-gradient(90deg, #9c4f96, #ff6355, #fba949, #fae442, #8bd448, #2aa8f2) 1;
+    margin: 10px 0;
+}
+
