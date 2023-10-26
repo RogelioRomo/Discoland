@@ -1,10 +1,14 @@
 import "./ItemList.css"
-import Item from"../Item/Item"
+import Item from "../Item/Item"
 
-const ItemList = ({products}) => {
-    return(
+const ItemList = ({ products }) => {
+    return (
         <div className="listGroup">
-            {products.map(prod => <Item key={prod.id}{...prod}/>)}
+            {products.map(prod => {
+                return (
+                    <Item key={prod.id} {...prod}/>
+                )
+            })}
         </div>
     )
 }

@@ -1,27 +1,42 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.navLogo{
+.navLogo {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.navImg{
-    padding-bottom:10px;
+.navImg {
+    padding-bottom: 10px;
 }
 
-.navButton{
-    margin:5px;
+.navButton {
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.navButtonHover:hover{
+    border-color: #646cff;
+    color:white;
 }
 
 .divider {
@@ -29,4 +44,3 @@
     border-image: linear-gradient(90deg, #9c4f96, #ff6355, #fba949, #fae442, #8bd448, #2aa8f2) 1;
     margin: 10px 0;
 }
-

@@ -1,5 +1,12 @@
 .controls{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
+.button{
+    margin: 5px;
+}
+
+.number{
+    padding: 10px;
+}
