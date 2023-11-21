@@ -1,14 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ItemCount from './components/ItemCount/ItemCount';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { CartProvider } from './context/CartContext';
-import Cart from './components/Cart/Cart'
+import { Cart } from './components/Cart/Cart';
 
 
 function App() {
