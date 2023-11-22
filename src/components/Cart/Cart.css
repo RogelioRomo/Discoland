@@ -1,0 +1,18 @@
+.checkFlex{
+    padding-top: 20px;
+}
+
+h3{
+    padding:0 20px;
+}
+
+.element{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cardCart{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px 10rem;
+}

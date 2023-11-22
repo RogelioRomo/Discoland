@@ -1,11 +1,12 @@
 import "./ItemDetail.css"
 import { useContext, useState } from "react"
 import ItemCount from "../ItemCount/ItemCount"
-import { Link } from "react-router-dom"
 import { useCart } from "../../context/CartContext";
+import { useNavigate } from "react-router-dom";
 
 const ItemDetail = ({id, name, img, category, description, price, stock})=>{
-    
+    const navigate = useNavigate()
+
     const [quantityAdded, setQuantityAdded] = useState(0)
     
     const { addItem, isInCart } = useCart()
@@ -44,7 +45,8 @@ const ItemDetail = ({id, name, img, category, description, price, stock})=>{
             <footer className="itemFooter">
                 {
                     isInCart(id) ? (
-                        <Link to="/cart" className="button">Terminar Compra</Link>
+                        <button onClick={() => navigate('/cart')}>Terminar compra</button>
+                        
                     ) : (
                         <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
                     )
