@@ -21,5 +21,5 @@ This project uses the next technology:
 - [Firebase] - Firebase and firestore used as the main data base.
 - [Vercel] - Hosted by Vercel.
 
-##Visual preview
+## Visual preview
 ![GIF para preview](./public/discoland.gif)
